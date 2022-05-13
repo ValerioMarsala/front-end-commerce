@@ -44,9 +44,6 @@ function Navbar(props) {
       ) : (
         ""
       )}
-      <NavCart to="/cart">
-        <CartIcon numbOfCartItems={props.numbOfCartItems} />
-      </NavCart>
       <NavHambBars />
     </Nav>
   );
