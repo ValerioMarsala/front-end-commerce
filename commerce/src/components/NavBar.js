@@ -37,13 +37,11 @@ function Navbar(props) {
       ) : (
         <NavLink to="/login">Login </NavLink>
       )}
-      {userLogged ? (
-        <NavCart to="/cart">
-          <CartIcon numbOfCartItems={props.numbOfCartItems} />
-        </NavCart>
-      ) : (
-        ""
-      )}
+
+      <NavCart to="/cart">
+        <CartIcon numbOfCartItems={props.numbOfCartItems} />
+      </NavCart>
+
       <NavHambBars />
     </Nav>
   );
