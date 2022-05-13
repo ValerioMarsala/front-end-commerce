@@ -50,14 +50,23 @@ function App() {
               />
             }
           />
-          <Route
+          {/* <Route
             path="/dashboard"
             element={<Dashboard numbOfCartItems={numbOfCartItems} />}
-          ></Route>
+          ></Route> */}
 
           <Route path="/product/:id" element={<ProductPage />}></Route>
 
-          <Route path="/dashboard" element={<Dashboard />}>
+          <Route
+            path="/dashboard"
+            element={
+              <Dashboard
+                numbOfCartItems={numbOfCartItems}
+                setFilter={setFilter}
+                loading={loading}
+              />
+            }
+          >
             <Route path="orders" element={<Orders />} />
             <Route path="users" element={<Users />} />
             <Route path="products" element={<Products products={products} />} />

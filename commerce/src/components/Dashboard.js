@@ -4,10 +4,14 @@ import Footer from "./Footer";
 import Navbar from "./NavBar";
 import Sidebar from "./Sidebar";
 
-export const Dashboard = () => {
+export const Dashboard = (props) => {
   return (
     <Wrapper>
-      <Navbar />
+      <Navbar
+        numbOfCartItems={props.numbOfCartItems}
+        setFilter={props.setFilter}
+        loading={props.loading}
+      />
       <Main>
         <Sidebar />
         <Outlet />
