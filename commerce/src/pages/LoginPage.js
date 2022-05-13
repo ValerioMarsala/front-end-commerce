@@ -1,14 +1,14 @@
-import React from 'react'
-import Login from '../components/Login'
-import Navbar from '../components/NavBar'
+import React from "react";
+import Login from "../components/Login";
+import Navbar from "../components/NavBar";
 
 function LoginPage(props) {
   return (
-	<>
-		<Navbar numbOfCartItems={props.numbOfCartItems}/>
-		<Login/>
-	</>
-  )
+    <>
+      <Navbar numbOfCartItems={props.numbOfCartItems} />
+      <Login />
+    </>
+  );
 }
 
-export default LoginPage
+export default LoginPage;

@@ -34,10 +34,7 @@ function App() {
               />
             }
           ></Route>
-          <Route
-            path="/login"
-            element={<LoginPage numbOfCartItems={numbOfCartItems} />}
-          />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<RegisterPage />} />
           <Route
             path="/cart"

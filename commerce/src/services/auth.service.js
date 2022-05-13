@@ -4,7 +4,7 @@ const API_URL = "http://162.19.65.77:8080/authenticate";
 
 const register = (username, email, password) => {
   return axios
-    .post("http://192.168.10.79:8080/users", {
+    .post("http://162.19.65.77:8080/users", {
       username: username,
       email: email,
       password: password,
