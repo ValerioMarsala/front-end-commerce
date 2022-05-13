@@ -1,25 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-//import AuthContext from "../context/AuthContext";
 import AuthService from "../services/auth.service";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
   let navigate = useNavigate();
-  //const { login } = useContext(AuthContext);
+
   const userRef = useRef();
   const errRef = useRef();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
-
-  //const [loading, setLoading] = useState(false);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   //   login(username, password);
-  //   //   setUserName("");
-  //   //   setPassword("");
-  // };
 
   const handleLogin = (e) => {
     e.preventDefault();
