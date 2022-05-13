@@ -5,7 +5,7 @@ import Navbar from "../components/NavBar";
 function LoginPage(props) {
   return (
     <>
-      <Navbar />
+      <Navbar numbOfCartItems={props.numbOfCartItems} />
       <Register />
     </>
   );
